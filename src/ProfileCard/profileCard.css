@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  flex: 0 2 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1rem solid #eaeaf2;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f8;
+  transition: transform 0.3s ease;
+}
+
+.profile img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile h1,
+.profile p {
+  color: #068686;
+}
+
+/* Animate images */
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile img {
+  animation: breathe 3s ease-in-out infinite;
+}

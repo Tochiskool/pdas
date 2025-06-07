@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* good base for rem scaling */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  /* padding: 1rem; */
+}
+
+/* Optional base spacing utility for sections */
+section {
+  margin-bottom: 2rem;
+}
+.Container {
+  width: 100%;
+  height: 70vh;
+  align-content: center;
+}
+.Container h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
